@@ -11,7 +11,7 @@ app.use(bodyparser.urlencoded({extended:false}))
 const url = config.mongoUrl;
 mongoose.connect(url,{useNewUrlParser:true,useUnifiedTopology:true})
 .then(()=>{
-    console.log('database connected')
+    console.log('database connected succsessfully')
 }).catch((err)=>{
     console.log(err);
 })
